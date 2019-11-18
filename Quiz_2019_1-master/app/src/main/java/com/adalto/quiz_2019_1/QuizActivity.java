@@ -27,14 +27,14 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         afirmacoes = new String[] {
-                "A terra é redonda?",
-                "Esta aula é chata?",
-                "O Rei do Gado é de 2000?",
-                "O gremio é azul?",
-                "O inter é azul?"
+                "Os humanos podem respirar e engolir ao mesmo tempo.",
+                "Tomar leite quente induz o sono.",
+                "Um pão com manteiga jogado ao ar cai pelo lado da manteiga três de cada quatro vezes.",
+                "Os redemoinho que se criam na pia vão em direções opostas dependendo do hemisfério em que estejam.",
+                "As digitais acostumam estar determinadas pelos nossos genes, então podem ser parecidas com as dos nossos pais."
         };
 
-        gabarito = new boolean[]{  true, true, false, true, false};
+        gabarito = new boolean[]{  false, true, false, false, false};
 
         tipo = getIntent().getExtras().getString("tipo");
         contador = 0;
